@@ -113,23 +113,23 @@ app = VetiverAPI(v, check_prototype = True)
 ```
 
 ```{python}
-import logging
-logging.basicConfig(
-  format='%(asctime)s - %(message)s',
-  level=logging.INFO
-)
-logging.info("App Started")
+#import logging
+#logging.basicConfig(
+#  format='%(asctime)s - %(message)s',
+#  level=logging.INFO
+#)
+#logging.info("App Started")
 ```
 
 ```{python}
-logging.info("Request Made")
-r = requests.post(api_url, json = [vals()])
-logging.info("Request Returned")
+#logging.info("Request Made")
+#r = requests.post(api_url, json = [vals()])
+#logging.info("Request Returned")
 
-if r.status_code != 200:
+#if r.status_code != 200:
   logging.error("HTTP error returned")
   
-return r.json().get('predict')[0]
+#return r.json().get('predict')[0]
 
 ```
 

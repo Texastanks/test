@@ -47,10 +47,6 @@ df %>%
   
 ```
 
-```{r}
-
-```
-
 ```         
 ```
 
@@ -99,16 +95,16 @@ v = VetiverModel(model, model_name='penguin_model', prototype_data=X)
 ```
 
 ```{python}
-from pins import board_folder
-from vetiver import vetiver_pin_write
+#from pins import board_folder
+#from vetiver import vetiver_pin_write
 
-model_board = board_folder("/data/model", allow_pickle_read = True)
-vetiver_pin_write(model_board, v)
+#model_board = board_folder("/data/model", allow_pickle_read = True)
+#vetiver_pin_write(model_board, v)
 ```
 
 ```{python}
-from vetiver import VetiverAPI
-app = VetiverAPI(v, check_prototype = True)
+#from vetiver import VetiverAPI
+#app = VetiverAPI(v, check_prototype = True)
 
 ```
 
@@ -127,7 +123,7 @@ app = VetiverAPI(v, check_prototype = True)
 #logging.info("Request Returned")
 
 #if r.status_code != 200:
-  logging.error("HTTP error returned")
+#  logging.error("HTTP error returned")
   
 #return r.json().get('predict')[0]
 

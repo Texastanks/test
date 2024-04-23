@@ -6,6 +6,7 @@ format:
 ---
 
 ```{r}
+
 library(palmerpenguins)
 library(dplyr)
 library(ggplot2)
@@ -43,6 +44,10 @@ df %>%
   dplyr::collect() %>%
   knitr::kable()
   
+```
+
+```{r}
+
 ```
 
 ```         
